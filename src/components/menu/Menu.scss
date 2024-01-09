@@ -1,0 +1,17 @@
+@import "../../style/variables.scss";
+
+.nav-menu {
+    .nav-menu-list {
+        display: flex;
+        list-style: none;
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a.active {
+                color: $main-color;
+            }
+        }
+    }
+}
