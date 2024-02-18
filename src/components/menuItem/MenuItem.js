@@ -16,17 +16,3 @@ export default function MenuItem({ to, children }) {
         </>
     );
 }
-
-// <header>
-//     <div>
-
-//     </div>
-//     <nav>
-
-//     </nav>
-// </header>
-
-// <main>
-
-// </main>
-// <footer></footer>

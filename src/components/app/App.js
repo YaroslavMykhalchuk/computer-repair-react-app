@@ -9,6 +9,8 @@ import LaptopRepair from '../pages/laptopRepair/LaptopRepair';
 import Warranty from '../pages/warranty/Warranty';
 import Price from '../pages/price/Price';
 import Contact from '../pages/contact/Contact';
+import ComputerRepair from '../pages/computerRepair/ComputerRepair';
+import PhoneRepair from '../pages/phoneRepair/PhoneRepair';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home />} />
             <Route path="about" element={<About/>} />
-            <Route path="services" element={<LaptopRepair/>} />
+            <Route path="services/notebooks" element={<LaptopRepair/>} />
+            <Route path="services/computers" element={<ComputerRepair/>} />
+            <Route path="services/phones" element={<PhoneRepair/>} />
             <Route path="warranty" element={<Warranty/>} />
             <Route path="price" element={<Price/>} />
             <Route path="contacts" element={<Contact/>} />

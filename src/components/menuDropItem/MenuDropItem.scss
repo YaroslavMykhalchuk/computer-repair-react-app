@@ -1,0 +1,13 @@
+@import "../../style/variables.scss";
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item.active {
+  background-color: white;
+}
+
+.active {
+    color: $main-color;
+}
