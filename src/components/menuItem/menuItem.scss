@@ -1,0 +1,9 @@
+@import "../../style/variables.scss";
+
+
+
+.nav-item {
+    .active-link {
+        color: $main-color;
+    }
+}

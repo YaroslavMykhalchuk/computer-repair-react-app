@@ -12,15 +12,24 @@ export default function Menu() {
     ];
 
     return (
-        <nav className="nav-menu">
-            <ul className="nav-menu-list">
-                <MenuItem to="/">Home</MenuItem>
-                <MenuItem to="/about">Про нас</MenuItem>
-                <MenuDropItem title="Послуги" dropdownItems={servicesDropdownItems} />
-                <MenuItem to="/warranty">Гарантія</MenuItem>
-                <MenuItem to="/price">Ціни</MenuItem>
-                <MenuItem to="/contacts">Контакти</MenuItem>
-            </ul>
+        <nav className="navbar navbar-expand-lg">
+            <a className="navbar-brand" href="/">
+                <img src="../../resources/icons/logo.png" alt="logo" />
+                Тяп-ляп
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul className="navbar-nav">
+                    <MenuItem to="/">Home</MenuItem>
+                    <MenuItem to="/about">Про нас</MenuItem>
+                    <MenuDropItem title="Послуги" dropdownItems={servicesDropdownItems} />
+                    <MenuItem to="/warranty">Гарантія</MenuItem>
+                    <MenuItem to="/price">Ціни</MenuItem>
+                    <MenuItem to="/contacts">Контакти</MenuItem>
+                </ul>
+            </div>
         </nav>
     );
 }
