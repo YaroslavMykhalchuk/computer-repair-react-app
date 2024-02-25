@@ -31,7 +31,7 @@ export default function Menu() {
                     <MenuItem to="/price">Ціни</MenuItem>
                     <MenuItem to="/contacts">Контакти</MenuItem>
                 </ul>
-                <Button border color="main" size="medium">Замовити дзвінок</Button>
+                <Button border color="main" size="medium">Замовити ремонт</Button>
             </div>
         </nav>
     );
