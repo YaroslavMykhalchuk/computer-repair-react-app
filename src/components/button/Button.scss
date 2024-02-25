@@ -1,0 +1,50 @@
+@import "../../style/variables.scss";
+
+.button {
+    cursor: pointer;
+    
+    &.small {
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    &.medium {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    &.large {
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    &:not(.border) {
+        background-color: $main-color;
+        color: white;
+        border: 1px solid transparent !important;
+    }
+
+    &.border {
+        border: 2px solid $main-color !important;
+        background-color: white;
+        color: $main-color;
+    }
+
+    &:hover {
+        &:not(.border) {
+            border: 1px solid $main-color !important;
+            background-color: white;
+            color: $main-color;
+        }
+
+        &.border {
+            border: 2px solid $main-color !important;
+            background-color: $main-color;
+            color: white;
+            border: none;
+        }
+    }
+}
