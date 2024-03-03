@@ -1,5 +1,7 @@
 import React from "react";
 
+import TypeServiceCard from "../../typeServiceCard/TypeServiceCard";
+
 import "./About.scss";
 
 export default function About() {
@@ -84,7 +86,9 @@ export default function About() {
 
             <div>
                 <h3 className="fs-2 fw-light text-center mb-3">Послуги сервісу "Тяп-ляп" :</h3>
-                
+                <div className="row">
+
+                </div>
             </div>
             
         </div>
