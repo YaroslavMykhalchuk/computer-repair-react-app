@@ -28,7 +28,7 @@ export default function Home() {
                 Але працює! І не просто працює, а літає!
             </p>
             <p className="fs-2 fw-light m-4">
-                Що ми тут виробляємо: \f058
+                Що ми тут виробляємо:
             </p>
             <ul className="custom-checklist m-4">
                 <li className="fs-4 fw-light">
