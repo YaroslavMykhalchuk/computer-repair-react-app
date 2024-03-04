@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.scss";
 
@@ -14,7 +15,7 @@ export default function Home() {
                         <h2 className="col-12 fs-2"><b>"Тяп-ляп"</b> – майстерня чудес на виклик!</h2>
                         <p className="col-12 fs-3">
                             Дізнайтесь про нас більше
-                            <a href="/about">тут</a>
+                            <Link to="/about">тут</Link>
                         </p>
                     </div>
                 </div>

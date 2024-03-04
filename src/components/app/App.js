@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
+        <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home />} />
             <Route path="about" element={<About/>} />
