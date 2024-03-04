@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function TypeServiceCard({ classNames, icon, text }) {
+import './TypeServiceCard.scss';
+
+export default function TypeServiceCard({ classNames, icon, text, to }) {
     return (
-        <div className={`type-service-card ${classNames}`}>
-            <i class={icon}></i>
+        <Link to={to} className={classNames}>
+            <i className={icon}></i>
             <p>{text}</p>
-        </div>
+        </Link>
     );
 }

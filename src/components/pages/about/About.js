@@ -84,13 +84,41 @@ export default function About() {
                 </li>
             </ul>
 
-            <div>
-                <h3 className="fs-2 fw-light text-center mb-3">Послуги сервісу "Тяп-ляп" :</h3>
-                <div className="row">
-
+            <div className="m-3">
+                <h3 className="fs-2 fw-light text-center mb-3">Послуги сервісу "Тяп-ляп":</h3>
+                <div className="container text-center">
+                    <div className="row g-2">
+                        <div className="col-12 col-lg-4">
+                            <TypeServiceCard
+                                classNames="type-service-card fs-2 fw-light p-4"
+                                icon="fas fa-laptop fa-lg mb-3"
+                                text="Ремонт ноутбуків"
+                                to="/services/notebooks"
+                            />
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <TypeServiceCard
+                                classNames="type-service-card fs-2 fw-light p-4"
+                                icon="fas fa-laptop fa-lg mb-3"
+                                text="Ремонт комп'ютерів"
+                                to="/services/computers"
+                            />
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <TypeServiceCard
+                                classNames="type-service-card fs-2 fw-light p-4"
+                                icon="fas fa-mobile-alt fa-lg mb-3"
+                                text="Ремонт телефонів"
+                                to="/services/phones"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
+
+
+
         </div>
     );
 }
