@@ -1,0 +1,14 @@
+@import "../../../style/variables.scss";
+
+.laptop-repair {
+    text-align: start;
+    padding: 0.8rem;
+    background-color: $background-color;
+
+    h1 {    
+        font-weight: lighter;
+        font-size: 2.5rem;
+
+        padding: 10px;
+    }  
+}
