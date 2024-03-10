@@ -27,7 +27,7 @@ function App() {
             <Route path="warranty" element={<Warranty/>} />
             <Route path="price" element={<Price/>} />
             <Route path="contacts" element={<Contact/>} />
-            <Route path="*" element={<Error message="Сторінка не знайдена"/>} />
+            <Route path="*" element={<Error code="404" message="Сторінка не знайдена"/>} />
           </Route>
         </Routes>
       </BrowserRouter>
