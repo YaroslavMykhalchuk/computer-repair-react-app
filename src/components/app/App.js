@@ -11,6 +11,7 @@ import Price from '../pages/price/Price';
 import Contact from '../pages/contact/Contact';
 import ComputerRepair from '../pages/computerRepair/ComputerRepair';
 import PhoneRepair from '../pages/phoneRepair/PhoneRepair';
+import Error from '../pages/error/Error';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="warranty" element={<Warranty/>} />
             <Route path="price" element={<Price/>} />
             <Route path="contacts" element={<Contact/>} />
+            <Route path="*" element={<Error message="Сторінка не знайдена"/>} />
           </Route>
         </Routes>
       </BrowserRouter>
