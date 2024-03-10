@@ -10,5 +10,28 @@
         font-size: 2.5rem;
 
         padding: 10px;
-    }  
+    }
+
+    h2 {
+        text-align: center;    
+    }
+
+    .row {
+        margin: 0 15px;
+        .laptop-repair-img {
+            img {
+                border-radius: 12px;
+            }
+        }
+
+        .laptop-repair-text {
+            background-color: white;
+            border-radius: 12px;
+            padding: 15px;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
