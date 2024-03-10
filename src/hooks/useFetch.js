@@ -13,13 +13,13 @@ function useFetch(url) {
         fetch(url)
             .then(response => {
             if (!response.ok) {
-                throw Error(response.statusText, { code: response.status });
+                throw new Error(`${response.statusText} (Code: ${response.status})`);
             }
             return response.json();
             })
             .then(data => setData(data))
             .catch(error => {
-                setError({ code: error.code || 'Unknown', message: error.message });
+                setError({ code: 'Unknown', message: error.toString() });
             })
             .finally(() => setIsLoading(false));
       }, [url]);
