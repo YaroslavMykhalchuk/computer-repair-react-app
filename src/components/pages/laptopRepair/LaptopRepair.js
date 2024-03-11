@@ -58,7 +58,7 @@ export default function LaptopRepair() {
             </div>
 
             {data && (
-                <p className="fs-3 fw-light m-4 list-brands">
+                <p className="fs-3 fw-light m-4">
                     У "Тяп-ляп" ми обіймаємо широкий спектр ноутбуків, пропонуючи ексклюзивні послуги для брендів:&nbsp;
                     {
                         data.brands.map((brands, index, array) => {
@@ -68,7 +68,7 @@ export default function LaptopRepair() {
                             return (
                                 <span>
                                     {prefix}
-                                    <span key={index} className="brand">
+                                    <span key={index} className="brand fw-normal">
                                         {brands.name}
                                     </span>
                                     {sufix}
