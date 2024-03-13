@@ -19,10 +19,10 @@ function useFetch(url) {
             })
             .then(data => setData(data))
             .catch(error => {
-                setError({ code: error.code || 'Unknown', message: error.toString() });
+                setError({ code: error.status || 'Unknown', message: error.toString() });
             })
             .finally(() => setIsLoading(false));
-      }, [url]);
+        }, [url]);
 
     return {data, isLoading, error};
 }
