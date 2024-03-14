@@ -1,0 +1,12 @@
+@import "../../style/variables.scss";
+
+
+.accordion-item {
+    .accordion-body {
+        padding: 0;
+    }
+    
+    .accordion-button:not(.collapsed) {
+        background-color: #f8f9fa; 
+    }
+}

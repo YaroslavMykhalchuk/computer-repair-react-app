@@ -3,6 +3,7 @@ import React from "react";
 import useFetch from "../../../hooks/useFetch";
 import Error from "../error/Error";
 import Loading from "../../loading/Loading";
+import Accordion from "../../accordion/Accordion";
 
 import "./Price.scss";
 
@@ -34,7 +35,7 @@ export default function Price() {
                 Прейскурант
             </h2>
 
-
+            <Accordion services={data.type_service} field="Ціна" />
         </div>
     );
 }
