@@ -1,0 +1,28 @@
+@import "../../../style/variables.scss";
+
+.warranty {
+    text-align: start;
+    padding: 0.8rem;
+    background-color: $background-color;
+
+    h1 {    
+        font-weight: lighter;
+        font-size: 2.5rem;
+
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .accordion {
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+    }
+
+    span {
+        color: $main-color;
+    }
+}

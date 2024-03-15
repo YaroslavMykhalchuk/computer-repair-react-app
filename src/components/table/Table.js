@@ -3,7 +3,6 @@ import React from "react";
 import './Table.scss';
 
 const Table = ({ repairs, field }) => {
-
     return (
         <table className="table">
             <thead>
@@ -18,7 +17,7 @@ const Table = ({ repairs, field }) => {
                     <td>{repair.name}</td>
                     <td>
                         {repair.price !== undefined && repair.price !== null ? `${repair.price} грн` :
-                            repair.warranty !== undefined && repair.warranty !== null ? `${repair.warranty} міс` : 
+                            repair.warranty_duration !== undefined && repair.warranty_duration !== null ? `${repair.warranty_duration} міс` : 
                             'Уточнюйте'}
                     </td>
                 </tr>
