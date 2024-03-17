@@ -11,6 +11,7 @@ import Price from '../pages/price/Price';
 import Contact from '../pages/contact/Contact';
 import ComputerRepair from '../pages/computerRepair/ComputerRepair';
 import PhoneRepair from '../pages/phoneRepair/PhoneRepair';
+import Docs from '../pages/docs/Docs';
 import Error from '../pages/error/Error';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="contacts" element={<Contact/>} />
             <Route path="*" element={<Error code="404" message="Сторінка не знайдена"/>} />
           </Route>
+          <Route path="docs" element={<Docs/>}/>
         </Routes>
       </BrowserRouter>
     </div>
